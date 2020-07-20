@@ -5,7 +5,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/GMarroquio/testeWaGuilherme.git",
+    "url": "git@github.com:GMarroquio/testeWaGuilherme.git",
     "seed": "git@bitbucket.org:waproject/wa-teste-api-api.git"
   },
   "scripts": {
