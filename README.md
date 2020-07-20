@@ -1,9 +1,5 @@
-WaProject Api Base
+WaProject Teste Guilherme
 ==================
-
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/f109c9a8c09dd5e648dd)
-
-Utilize o VSCode, já está configurado com sugestão de extensões e debug.
 
 ### Tecnologias
 
@@ -18,20 +14,20 @@ Utilize o VSCode, já está configurado com sugestão de extensões e debug.
 * Sentry.io (log de erros)
 * Pug (templates de email)
 
-### Iniciando um novo projeto
+### Rodando o testes
+
+criar um arquivo `.env` com base no `.env.example`
 
 ```bash
 # install docker https://docs.docker.com/install
 
-git clone git@bitbucket.org:waprojectbase/waproject-base-api.git
+git clone git@github.com:GMarroquio/testeWaGuilhermeBack.git
 yarn install # ou npm install
 
-node ./init.js
+docker-compose build
 
 [sudo] docker-componse up
 # levantará o docker com o banco de dados e a aplicação.
 # Ele aplicará as migrations/seeds do banco e depois dará watch nos arquivos
 # e iniciará o node com a api
 ```
-
-### Para mais informações veja a pasta ./docs
