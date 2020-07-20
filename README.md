@@ -24,7 +24,7 @@ criar um arquivo `.env` com base no `.env.example`
 git clone git@github.com:GMarroquio/testeWaGuilhermeBack.git
 yarn install # ou npm install
 
-docker-compose build
+[sudo] docker-compose build
 
 [sudo] docker-componse up
 # levantará o docker com o banco de dados e a aplicação.
