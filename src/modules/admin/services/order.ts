@@ -6,12 +6,10 @@ import { OrderRepository } from '../repositories/order';
 
 @Injectable()
 export class OrderService {
-  constructor(
-    private orderRepository: OrderRepository,
-  ) { }
+  constructor(private orderRepository: OrderRepository) {}
 
   public async save(model: IOrder): Promise<Order> {
-    console.log(model)
+    console.log(model);
     if (model.id) return this.update(model);
     return this.create(model);
   }

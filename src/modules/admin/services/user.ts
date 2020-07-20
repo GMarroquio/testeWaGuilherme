@@ -13,7 +13,7 @@ export class UserService {
     private userRepository: UserRepository,
     private passwordService: PasswordService,
     private mailService: MailService
-  ) { }
+  ) {}
 
   public async save(model: IUser): Promise<User> {
     if (!model.roles || model.roles.length === 0) {
